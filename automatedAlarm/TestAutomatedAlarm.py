@@ -1,4 +1,4 @@
-# TestCenturySign.py
+# TestAutomatedAlarm.py
 
 # Import Statements
 import unittest

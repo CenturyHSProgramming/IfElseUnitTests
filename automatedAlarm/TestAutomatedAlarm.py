@@ -44,9 +44,21 @@ class KnownValues(unittest.TestCase):
 
     def test_automatedAlarmForFridaySchool(self):
         # Capture the results of the function
-        result = automatedAlarm.automatedAlarm("Saturday", False)
+        result = automatedAlarm.automatedAlarm("Friday", True)
         # Check for expected output
         self.assertEqual('7:00', result)
+
+    def test_automatedAlarmForThursdaySchool(self):
+        # Capture the results of the function
+        result = automatedAlarm.automatedAlarm("Thursday", True)
+        # Check for expected output
+        self.assertEqual('7:00', result)
+        
+    def test_automatedAlarmForThursdayOff(self):
+        # Capture the results of the function
+        result = automatedAlarm.automatedAlarm("Thursday", False)
+        # Check for expected output
+        self.assertEqual('8:30', result)
 
 # Run the tests
 if __name__ == '__main__':

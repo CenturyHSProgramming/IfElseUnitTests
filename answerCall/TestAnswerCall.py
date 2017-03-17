@@ -8,7 +8,7 @@ class KnownValues(unittest.TestCase):
 
     def test_answerCallForUnknownSameAreaCodeGoodTime(self):
         # Capture the results of the function
-        result = answerCall.answerCall("U", True, "09:00"
+        result = answerCall.answerCall("U", True, "09:00")
         # Check for expected output
         self.assertEqual(True, result)
 
@@ -20,7 +20,7 @@ class KnownValues(unittest.TestCase):
 
     def test_answerCallForUnknownSameAreaCodeBadTime(self):
         # Capture the results of the function
-        result = answerCall.answerCall("U" True "23:50" )
+        result = answerCall.answerCall("U", True, "23:50" )
         # Check for expected output
         self.assertEqual(False, result)
 
@@ -40,7 +40,7 @@ class KnownValues(unittest.TestCase):
         # Capture the results of the function
         result = answerCall.answerCall("F", False, "10:00")
         # Check for expected output
-        self.assertEqual(True result)
+        self.assertEqual(True, result)
 
     def test_answerCallForFriendDifferentAreaCodeBadTime(self):
         # Capture the results of the function
@@ -58,7 +58,7 @@ class KnownValues(unittest.TestCase):
         # Capture the results of the function
         result = answerCall.answerCall("R", False, "9:00")
         # Check for expected output
-        self.assertEqual(True result)
+        self.assertEqual(True, result)
 
     def test_answerCallForRelativeDifferentAreaCodeBadTime(self):
         # Capture the results of the function
